@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Up | PL System</title>
+  <title>Sign Up - PL System</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:wght@100..900&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
   <link rel="stylesheet" href="style.css">
@@ -16,32 +16,45 @@
     <div class="menu-icon">&#9776;</div>
   </header>
 
-  <form action="">
+  <form action="" onsubmit="return validateForm()">
     <div class="login-container">
       <div class="logo-icon">Welcome Dear</div>
+
       <div class="input-field">
         <span class="material-symbols-outlined">person</span>
-        <input type="text" placeholder="Full Name" required>
-      </div>
-      <div class="input-field">
-        <span class="material-symbols-outlined">tty</span>
-        <input type="number" placeholder="Mobile Number" required>
-      </div>
-      <div class="input-field">
-        <span class="material-symbols-outlined">mail</span>
-        <input type="email" placeholder="Email Id" required>
-      </div>
-      <div class="input-field">
-        <span class="material-symbols-outlined">lock</span>
-        <input type="text" placeholder="Password" required>
-      </div>
-      <div class="input-field">
-        <span class="material-symbols-outlined">enhanced_encryption</span>
-        <input type="password" placeholder="Confirm Password" required>
+        <input type="text" name="fullName" placeholder="Full Name" required>
       </div>
 
-      <button class="button">Create an account</button>
+      <div class="input-field">
+        <span class="material-symbols-outlined">tty</span>
+        <input type="tel" name="mobileNumber" id="mobile" maxlength="10" placeholder="Mobile Number" required>
+      </div>
+
+      <div class="input-field">
+        <span class="material-symbols-outlined">mail</span>
+        <input type="text" name="gmailId" id="email" placeholder="Email Id" required>
+      </div>
+
+      <div class="input-field">
+        <span class="material-symbols-outlined">lock</span>
+        <input type="text" name="password" id="password" placeholder="Password" required>
+      </div>
+
+      <div class="input-field">
+        <span class="material-symbols-outlined">enhanced_encryption</span>
+        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required>
+      </div>
+
+      <button type="submit" class="button">Create an account</button>
+
+      <div class="links">
+        <a href="#">Log In</a>
+        <a href="#">Need Help</a>
+      </div>
     </div>
   </form>
+
+  <script src="validate.js"></script>
+
 </body>
 </html>
