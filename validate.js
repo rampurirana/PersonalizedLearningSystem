@@ -19,7 +19,7 @@ function validateForm() {
     }
 
     if (!passwordValid.test(password)) {
-        alert("Password must be at least 8 characters and include at least one letter, one number, and one special character");
+        alert("Password must be 8+ characters with combination of letters, numbers & special character");
         return false;
     }
 
