@@ -4,120 +4,98 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>User Dashboard - PL System</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Material+Symbols+Rounded" />
   <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
   <div class="container">
-    <!-- Sidebar -->
     <aside class="sidebar">
-      <h2 class="logo">PL System</h2>
-      <ul class="menu">
-        <div class="slide-logo">
+      <h1 class="logo">PL System</h1>
+      <nav>
+        <ul class="menu">
+          <li class="slide-logo active">
             <span class="material-symbols-outlined">dashboard</span>
-            <li class="active">Dashboard</li>
-        </div>
+            <a href="#">Dashboard</a>
+          </li>
 
-        <div class="slide-logo">
+          <li class="slide-logo">
             <span class="material-symbols-outlined">school</span>
-            <li class="active">My class</li>
-        </div>
+            <a href="#">My Class</a>
+          </li>
 
-        <div class="slide-logo">
+          <li class="slide-logo">
             <span class="material-symbols-outlined">task</span>
-            <li class="active">Task</li>
-        </div>
+            <a href="#">Task</a>
+          </li>
 
-        <div class="slide-logo">
+          <li class="slide-logo">
             <span class="material-symbols-outlined">settings</span>
-            <li class="active">Setting</li>
-        </div>
+            <a href="#">Setting</a>
+          </li>
 
-        <div class="slide-logo">
+          <li class="slide-logo">
             <span class="material-symbols-outlined">chat</span>
-            <li class="active">Chatbot</li>
-        </div>
+            <a href="#">Chatbot</a>
+          </li>
 
-        <div class="slide-logo">
+          <li class="slide-logo">
             <span class="material-symbols-outlined">logout</span>
-            <li class="active">Log out</li>
-        </div>
-      </ul>
+            <a href="#">Log Out</a>
+          </li>
+        </ul>
+      </nav>
     </aside>
 
-    <!-- Main Content -->
     <main class="main">
       <header class="header">
         <div class="profile">
-          <img src="Images/Profile.png" alt="profile">
+          <img src="Images/Profile.png" alt="User Profile" />
           <div>
-            <h3>Good morning Rampuri!</h3>
+            <h3>Good Morning, Rampuri!</h3>
             <p>Do your best for your future</p>
           </div>
         </div>
-        <input type="text" placeholder="Search here" class="search" />
+        <input type="search" placeholder="Search here..." class="search" aria-label="Search tasks" />
       </header>
 
       <section class="tasks">
-        <h2>My task</h2>
+        <h2>My Task</h2>
         <div class="cards">
-          <div class="card purple">
-            <h3>Landing page product</h3>
-            <h1>15 task <span>+9.5%</span></h1>
-            <p>10 task done • 75% completed</p>
-          </div>
+          <article class="card purple">
+            <h3>Landing Page Product</h3>
+            <h1>15 tasks <span>+9.5%</span></h1>
+            <p>10 tasks done • 75% completed</p>
+          </article>
 
-          <div class="card orange">
-            <h3>Apartment app</h3>
-            <h1>38 task <span>+4.5%</span></h1>
-            <p>34 task done • 30% completed</p>
-          </div>
+          <article class="card orange">
+            <h3>Apartment App</h3>
+            <h1>38 tasks <span>+4.5%</span></h1>
+            <p>34 tasks done • 30% completed</p>
+          </article>
 
-          <div class="card green">
-            <h3>Learning app</h3>
-            <h1>56 task <span>+6.2%</span></h1>
-            <p>45 task done • 80% completed</p>
-          </div>
+          <article class="card green">
+            <h3>Learning App</h3>
+            <h1>56 tasks <span>+6.2%</span></h1>
+            <p>45 tasks done • 80% completed</p>
+          </article>
         </div>
       </section>
 
       <section class="progress">
         <div class="progress-left">
-          <h2>My progress</h2>
-          <canvas id="progressChart"></canvas>
-        </div>
-
-        <div class="teachers">
-          <h2>Best teacher</h2>
-          <div class="teacher">
-            <img src="Images/Teacher.png" alt="">
-            <div>
-              <h4>Mrs. Roses</h4>
-              <p>Java ⭐ 4.9</p>
+          <h2>My Progress</h2>
+          <div class="progress-card">
+            <div class="card-content">
+              <div id="line-chart"></div>
             </div>
           </div>
-
-          <div class="teacher">
-            <img src="Images/Teacher.png" alt="">
-            <div>
-              <h4>Mrs. Angel</h4>
-              <p>Python ⭐ 4.7</p>
-            </div>
-          </div>
-
-          <div class="teacher">
-            <img src="Images/Teacher.png" alt="">
-            <div>
-              <h4>Mr. Richard</h4>
-              <p>Website Design ⭐ 4.5</p>
-            </div>
-          </div>
-
         </div>
       </section>
+
     </main>
   </div>
 
-  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="chart.js"></script>
 </body>
 </html>
