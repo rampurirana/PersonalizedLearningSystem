@@ -84,6 +84,10 @@ body {
   margin-bottom: 35px;
 }
 
+.header button {
+  color: #6a5acd;
+}
+
 .profile {
   display: flex;
   align-items: center;
@@ -190,4 +194,80 @@ body {
 
 .progress-left {
   flex: 2;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 240px;
+    height: 100%;
+    z-index: 999;
+    transition: 0.3s ease;
+    border-radius: 0;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .main {
+    flex: 1;
+    padding: 10px 20px;
+    margin-left: 0;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 998;
+    justify-content: space-between;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  .search {
+    width: 40%;
+  }
+
+  .tasks {
+    margin-top: 90px;
+    margin-bottom: 15px;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .progress {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+    .sidebar .menu li.active {
+    background: #6a5acd;
+    color: #fff;
+  }
+
+  .sidebar .menu li.active span {
+    color: #fff;
+  }
 }
