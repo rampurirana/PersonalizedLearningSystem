@@ -94,19 +94,8 @@ body {
   gap: 15px;
 }
 
-.profile img {
-  border-radius: 50%;
-  width: 55px;
-  height: 55px;
-}
-
 .profile h3 {
   font-size: 18px;
-}
-
-.profile p {
-  font-size: 14px;
-  color: #777;
 }
 
 .search {
@@ -272,7 +261,7 @@ body {
   }
 }
 
-/* My Class Page */
+/* My Courses Page */
 .courses {
   background: #fff;
   border-radius: 20px;
@@ -374,7 +363,6 @@ body {
   font-size: 14px;
 }
 
-/* Responsive */
 @media (max-width: 1024px) {
   .course-card {
     flex: 1 1 calc(50% - 20px);
@@ -386,6 +374,102 @@ body {
     flex: 1 1 100%;
   }
   .courses {
-    margin-top: 90px; /* fixed header spacing */
+    margin-top: 90px;
+  }
+}
+
+/* My Profile page */
+.profile-section {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.profile-header h2 {
+  color: #333;
+}
+
+.update-btn {
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #6a5acd;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.update-btn:hover {
+  background: #563dbe;
+}
+
+.profile-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.profile-card {
+  flex: 1 1 calc(33.333% - 20px);
+  background: #f8f8ff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.profile-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6a5acd;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.profile-card ul {
+  list-style: none;
+}
+
+.profile-card ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.profile-card ul li span {
+  font-weight: 600;
+  color: #333;
+}
+
+@media (max-width: 1024px) {
+  .profile-card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    flex: 1 1 100%;
+  }
+  .profile-section {
+    margin-top: 90px;
   }
 }

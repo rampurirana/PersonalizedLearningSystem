@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile - PL System</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Material+Symbols+Rounded" />
+    <link rel="stylesheet" href="Style File/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1 class="logo">PL System</h1>
+            <nav>
+                <ul class="menu">
+                    <li class="slide-logo">
+                        <span class="material-symbols-outlined">dashboard</span>
+                        <a href="user-dashboard.html">Dashboard</a>
+                    </li>
+
+                    <li class="slide-logo">
+                        <span class="material-symbols-outlined">school</span>
+                        <a href="my-courses.html">My Courses</a>
+                    </li>
+
+                    <li class="slide-logo active">
+                        <span class="material-symbols-outlined">person</span>
+                        <a href="#">My Profile</a>
+                    </li>
+
+                    <li class="slide-logo">
+                        <span class="material-symbols-outlined">chat</span>
+                        <a href="#">Chatbot</a>
+                    </li>
+
+                    <li class="slide-logo">
+                        <span class="material-symbols-outlined">logout</span>
+                        <a href="#">Log Out</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main">
+            <header class="header">
+                <button class="material-symbols-outlined">menu</button>
+                <div class="profile">
+                    <div>
+                        <h3>Good Morning, Rampuri Rana!</h3>
+                    </div>
+                </div>
+                <input type="search" placeholder="Search here..." class="search" aria-label="Search tasks" />
+            </header>
+
+            <section class="profile-section">
+                <div class="profile-header">
+                    <h2>My Profile</h2>
+                    <a href="update-profile.html" class="update-btn"><span class="material-symbols-outlined">edit</span> Update Profile</a>
+                </div>
+
+                <div class="profile-cards">
+                    <div class="profile-card">
+                        <h3><span class="material-symbols-outlined">person</span> Personal Information</h3>
+                        <ul>
+                            <li><span>Name:</span> Rampuri Rana</li>
+                            <li><span>Date of Birth:</span> 01-Jan-2005</li>
+                            <li><span>Mobile Number:</span> +91 9876543210</li>
+                            <li><span>Email ID:</span> rampuri@example.com</li>
+                            <li><span>Address:</span> Some Street, Some District, Some State, India</li>
+                        </ul>
+                    </div>
+
+                    <div class="profile-card">
+                        <h3><span class="material-symbols-outlined">school</span> Education</h3>
+                        <ul>
+                            <li><span>Graduation College/University:</span> ABC University</li>
+                            <li><span>Graduation Session:</span> 2022 - 2025</li>
+                            <li><span>Major/Stream:</span> BCA</li>
+                            <li><span>High School:</span> XYZ School, 2020</li>
+                            <li><span>Other Certifications:</span> Java Programming, Data Science</li>
+                        </ul>
+                    </div>
+
+                    <div class="profile-card">
+                        <h3><span class="material-symbols-outlined">info</span> Other Details</h3>
+                        <ul>
+                            <li><span>Gender:</span> Male</li>
+                            <li><span>Nationality:</span> Indian</li>
+                            <li><span>Languages Known:</span> English, Hindi</li>
+                            <li><span>Hobbies:</span> Reading, Coding, Gaming</li>
+                            <li><span>Profile Created On:</span> 15-Oct-2025</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="Script File/chart.js"></script>
+    <script src="Script File/menu.js"></script>
+</body>
+</html>
