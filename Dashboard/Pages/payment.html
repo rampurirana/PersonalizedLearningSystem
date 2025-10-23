@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment - PL System</title>
+  <link rel="stylesheet" href="update-profile.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+  <div class="container">
+    <main class="main">
+        <a href="../my-courses.html" class="back-btn">
+      <span class="material-symbols-outlined">arrow_back</span> Back to Profile
+    </a>
+
+      <section class="payment-section">
+        <h2>Payment</h2>
+
+        <div class="payment-summary">
+          <h3>Order Summary</h3>
+          <ul>
+            <li><span>Web Development Course</span> <span>Rs. 499</span></li>
+          </ul>
+          <div class="total">
+            <span>Total:</span>
+            <span>Rs. 499</span>
+          </div>
+        </div>
+
+        <div class="billing-details">
+          <h3>Billing Details</h3>
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" placeholder="Full Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Email" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <input type="tel" placeholder="Mobile Number" required>
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Address" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" placeholder="City" required>
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="State" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" placeholder="Country" required>
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="ZIP / Postal Code" required>
+              </div>
+            </div>
+            
+            <div class="payment-method">
+              <h3>Payment Method</h3>
+              <label><input type="radio" name="payment" value="credit-card" checked> Credit / Debit Card</label>
+              <label><input type="radio" name="payment" value="upi"> UPI</label>
+              <label><input type="radio" name="payment" value="netbanking"> Net Banking</label>
+            </div>
+
+            <button type="submit" class="pay-btn">Pay Now</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
